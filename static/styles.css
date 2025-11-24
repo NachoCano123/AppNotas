@@ -170,6 +170,7 @@ input, textarea {
 input:focus {
     outline: none;
     border-color: #2980b9;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
 }
 
 .link_cancelar {
@@ -293,3 +294,4 @@ img {
   background-color: #7f8c8d;
   transform: translateY(-1px);
 }
+
