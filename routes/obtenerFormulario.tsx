@@ -13,23 +13,13 @@ export const handler: Handlers = {
         return new Response("Faltan campos requeridos", { status: 400 });
       }
       
-      const newNote = {
-        id: Date.now(),
-        title,
-        content,
-        category,
-      };
-
-      notesSignal.value = [...notesSignal.value, newNote];
-      
-      /*
       notas.push({
         id: Date.now(),
         title,
         content,
         category
       });
-      */
+      
       return new Response(null, {
         status: 303,
         headers: { "Location": "/enviar_nota" },
